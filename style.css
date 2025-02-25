@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    padding: 10px 40px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header span{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+header span img{
+    width: 25px;
+}
+
+
+header nav{
+    display: flex;
+    gap:40px;
+}
+
+header nav a{
+    color:grey;
+    font-size: 14px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+header nav a:hover{
+    border-bottom: 2px solid rgb(195, 75, 5);
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .bg-video{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+main > div{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5));
+    z-index: -1;
+}
+
+main .banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+main .banner h1{
+    font-size: 90px;
+    color:transparent;
+    writing-mode: sideways-lr;
+    background: linear-gradient(rgb(226, 86, 5), rgb(243, 196, 12));
+    background-clip: text;
+
+}
+
+main .social{
+    position: absolute;
+    right:30px;
+    top:50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+footer p{
+    font-size: 11px;
+}
+

@@ -1,0 +1,89 @@
+main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+main .left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: white;
+    height: 100%;
+}
+
+main .left-side form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 30px;
+    gap:20px;
+}
+
+form h1{
+    color: rgb(255, 85, 0);
+}
+
+form input,  select, textarea{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+    resize: none;
+}
+
+form input:focus, select:focus, textarea:focus{
+    border-color: rgb(255, 85, 0);
+}
+
+form button{
+    background-color: transparent;
+    border:none;
+    color:black;
+    align-self: flex-end;
+    font-size: 20px;
+    color:rgb(255, 85, 0);
+}
+
+
+main .right-side{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .right-side img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+ 
+ 
+
+}
+
+.right-side video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    mix-blend-mode: screen;
+ 
+   
+}
